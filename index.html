@@ -1,22 +1,62 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>七夕-高陌</title>
-<style>
-*{ margin:0; padding:0; list-style:none;}
-body{ font-size:18px; text-align:center;}
-.time{ height:30px; padding:200px;}
-</style>
+<meta  http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+<title>星空弹幕</title>
+
 </head>
 <body>
-  <div class="time">
-    <span id="t_d">00天</span>
-    <span id="t_h">00时</span>
-    <span id="t_m">00分</span>
-    <span id="t_s">00秒</span>
-	<span id="z_f">00次</span>
-  </div>
+
+<div class="screen">
+	<div class="landscape"></div>
+	<div class="filter"></div>
+	<canvas id="canvas"></canvas>
+	<div class="send">
+		<div class="input clearfix">
+		<input type="text" class="text">
+		<div class="btn">发送弹幕</div>
+		</div>
+	</div>
+	<div class="time">
+		<span id="t_d">00天</span>
+		<span id="t_h">00时</span>
+		<span id="t_m">00分</span>
+		<span id="t_s">00秒</span>
+		<span id="z_f">00次</span>
+    </div>
+	<div class="s_show">
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">我好想你</div>
+		<div class="magictime twisterInUp">我真的好想你````</div>
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">不要放弃我</div>
+		<div class="magictime twisterInUp">我会陪你到最后的````</div>
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">可以一起出去玩吗？</div>
+		<div class="magictime twisterInUp">别怕，我会陪着你的````</div>
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">我好累</div>
+		<div class="magictime twisterInUp">我会坚持下去的````</div>
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">扶我起来，这串代码还没写完</div>
+		<div class="magictime twisterInUp">和我在你起好吗？````</div>
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">我会在这里等你</div>
+		<div class="magictime twisterInUp">陪着你的````</div>
+		<div class="magictime twisterInUp">陌陌</div>
+		<div class="magictime twisterInUp">加油</div>
+		<div class="magictime twisterInUp">我们会在一起的````</div>
+	</div>
+</div>
+			
+<script type="text/javascript" src="js/star.js"></script>
+<script type="text/javascript" src="js/dan.js"></script>
+	
 <script>
   function GetRTime(){
     var beginTime= new Date('2020/04/22 18:49:00');
@@ -45,6 +85,6 @@ body{ font-size:18px; text-align:center;}
   }
   setInterval(GetRTime,0);
 </script>
- <img src = "time.gif">
+
 </body>
 </html>
